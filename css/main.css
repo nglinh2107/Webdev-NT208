@@ -18,12 +18,12 @@ body{
 }
 
 .logo{
-    padding: .1em;
+    padding-left: .1em;
     padding-bottom: 0;
     text-decoration: none;
     font-weight: bold;
     color: white;
-    font-size: 4em;
+    font-size: 4.5em;
     margin: 0;
     font-family: 'Libre Caslon Text';
 
@@ -37,8 +37,8 @@ body{
     margin: 0;
     color: white;
 }
-.icon img{
-    padding-top:1px;
+img{
+    margin-top: 1em;
 }
 
 nav{
