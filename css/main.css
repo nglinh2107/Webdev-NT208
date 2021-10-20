@@ -44,7 +44,7 @@ img{
 nav{
     color: white;
     display: grid;
-    grid-template-columns:40em auto;
+    grid-template-columns:45em auto;
     justify-content: unset;
 
 }
@@ -62,7 +62,7 @@ nav{
 }
 a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 27px;
     color: rgb(20, 71, 180);
     margin: 1em;
     font-family: 'Kanit';
@@ -82,7 +82,7 @@ ul{
     color: white;
     display: grid;
     padding: 1em 1em;
-    grid-template-columns:40em;
+    grid-template-columns:44em;
     text-align: center;
     
 }
@@ -95,5 +95,5 @@ span{
     font-weight: bold;
 }
 .cont li{
-    font-size: 18px;
+    font-size: 20px;
 }
