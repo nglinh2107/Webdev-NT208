@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
 body{
-    background: rgba(17, 42, 156, 0.767);
+    background:#3f51b5;
     margin: 0;
     font-family: Arial;
 }
 
 .container{
-    background: rgba(17, 42, 156, 0.767);
+    background: #3f51b5;
     padding: 1em 2em ;
 }
 
@@ -18,12 +18,11 @@ body{
 }
 
 .logo{
-    padding-left: .1em;
-    padding-bottom: 0;
+    padding: 0;
     text-decoration: none;
     font-weight: bold;
     color: white;
-    font-size: 4.5em;
+    font-size: 4.5vw;
     margin: 0;
     font-family: 'Libre Caslon Text';
 
@@ -31,41 +30,48 @@ body{
 
 .slogan{
     text-align:right;
-    font-size:x-large;
+    font-size:2.3vw;
     font-family: 'Raleway';
     padding: 0;
     margin: 0;
     color: white;
+
 }
 img{
-    margin-top: 1em;
+    margin-top: 1vw;
+    width: 3.8vw;
+    padding-left:0em ;
 }
 
 nav{
     color: white;
     display: grid;
-    grid-template-columns:45em auto;
+    grid-template-columns:60vw auto;
     justify-content: unset;
 
 }
 .menu{
-    padding: 0 3em;
+    margin-left: 1vw;
+    padding-right: 2vw;
     display: flex;
     list-style-type: none;
     height: auto;
     width: 100%;
-    justify-content: space-between;
+    
 }
 .login{
-    padding-right: 3em ;
+    padding-right: 2vw ;
     text-align: right;
 }
 a{
     text-decoration: none;
-    font-size: 27px;
-    color: rgb(20, 71, 180);
-    margin: 1em;
-    font-family: 'Kanit';
+    font-size: 1.6vw;
+    color: #28b9b9;
+    background-color: transparent;
+    margin: 1vw;
+    padding-right: 3vw;
+    font-family: 'Fira Sans';
+    font-weight:normal;
 }
 .slide img{
     margin: 0;
@@ -78,22 +84,21 @@ ul{
     list-style-type: none;
 }
 .contact{
-    background: rgba(17, 42, 156, 0.767);
+    background: #21318d;
+    width: 100%;
     color: white;
-    display: grid;
-    padding: 1em 1em;
-    grid-template-columns:44em;
-    text-align: center;
-    
+    padding: 1vw 1vw;
+    float: right;
 }
 .cont{
     display: flex;
-    justify-content: space-between;
     text-align: right;
+    float: right;
 }
 span{
     font-weight: bold;
 }
 .cont li{
-    font-size: 20px;
+    font-size: 1.4vw;
+    padding: 0vw 3vw;
 }

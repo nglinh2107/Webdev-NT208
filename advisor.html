@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/advisor.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <title>Bác sĩ tư vấn</title>
 </head>
+
 <body>
+    <a name="top"></a>
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="/index.html">MEDICAS</a>
-
-            <img class="logo" src="image/health.png" alt="logo">
-
-            <nav>
+            <div class="medicas">
+                <img src="image/health.png" alt="logo">
+                <a class="logo" href="../index.html"> MEDICAS</a>
+            </div>
+            <nav class="menu">
                 <ul class="primary-nav">
                     <li><a href="index.html">Trang chủ</a></li>
                     <li class="current"><a href="#">Tư vấn sức khỏe</a></li>
@@ -22,55 +27,320 @@
                 </ul>
 
                 <ul class="secondary-nav">
-                    <li><a href="#">Login</a></li>
+                    <li class="cta"><a href="#">Đăng nhập</a></li>
                 </ul>
             </nav>
         </div>
     </div>
+    <div class="main">
+        <section class="find">
+            <h2>Tìm bác sĩ của bạn</h2>
+            <hr />
+            <div class="form-group-name">
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Tìm theo tên">
+                    <button type="submit"><i class="fa fa-search" style="color: #12CBC4;"></i></button>
+                </form>
+            </div>
+            <div class="form-group-specialty">
+                <!--<form action="">
+                <input type="text" id="specialty" name="specialty" placeholder="Tìm theo chuyên khoa">
+                <a href="#" class="search-specialty"></a>
+                <button type="submit"><i class="fa fa-search" style="color: #12CBC4;"></i></button>
+            </form>-->
+                <select>
+                    <option selected="" value="-2">Tìm theo chuyên khoa</option>
+                    <option value="1" class="ng-star-inserted">Tim Mạch</option>
+                    <option value="2" class="ng-star-inserted">Chẩn Đoán Hình Ảnh</option>
+                    <option value="15" class="ng-star-inserted">Nội Tiêu Hóa</option>
+                    <option value="16" class="ng-star-inserted">Đa Khoa</option>
+                    <option value="18" class="ng-star-inserted">Lão Khoa</option>
+                    <option value="20" class="ng-star-inserted">Ung Bướu</option>
+                    <option value="22" class="ng-star-inserted">Huyết Học</option>
+                    <option value="24" class="ng-star-inserted">Chăm sóc đặc biệt giai đoạn cuối</option>
+                    <option value="26" class="ng-star-inserted">Nội Khoa</option>
+                    <option value="31" class="ng-star-inserted">Ung Bướu</option>
+                    <option value="33" class="ng-star-inserted">Nội Thần Kinh</option>
+                    <option value="37" class="ng-star-inserted">Sản / Phụ Khoa</option>
+                    <option value="38" class="ng-star-inserted">Nhãn Khoa</option>
+                    <option value="39" class="ng-star-inserted">Nhãn Khoa</option>
+                    <option value="46" class="ng-star-inserted">Nhi Khoa</option>
+                    <option value="53" class="ng-star-inserted">Nội Hô Hấp</option>
+                    <option value="54" class="ng-star-inserted">Xạ Trị Ung Thư</option>
+                    <option value="55" class="ng-star-inserted">Nội Khớp</option>
+                    <option value="64" class="ng-star-inserted">Gan</option>
+                    <option value="65" class="ng-star-inserted">Nội Tiêu Hóa</option>
+                    <option value="67" class="ng-star-inserted">Dinh Dưỡng</option>
+                </select>
+            </div>
+        </section>
 
-    <section class="find">
-        <h2>Tìm bác sĩ của bạn</h2>
-        <form action="">
-            <input type="text" id="name" name="name" placeholder="Tìm theo tên">
-            <input type="text" id="specialty" name="specialty" placeholder="Tìm theo chuyên khoa">
-      
-        </form>
-    </section>
+        <section advisor>
+            <div class="text-wrap">
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/123172/a6016c83-4713-4901-a48b-91e090702f38" alt="">
+                        <div class="info">
+                            <p class="name">ThS. BS. Nguyễn Thị Kim Dung</p>
+                            <cite class="specialty">Nhãn khoa</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Nguyễn Thị Kim Dung chuyên điều trị bệnh lý về Mắt. Bác sĩ tốt nghiệp là Thạc sĩ
+                            chuyên
+                            ngành Nhãn khoa và hiện công tác tại Bệnh viện Mắt TP.HCM.</p>
 
-    <section advisor>
-        <div class="contain">
-            <ul>
-                <li>
-                    <img src="image/nhankhoa.png" alt="BS Nhan khoa">
-                    <p>ThS. BS. Nguyễn Thị Kim Dung</p>
-                    <cite>- Nhãn khoa</cite>
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget malesuada arcu. Aenean varius porta lobortis. Curabitur ultricies a arcu in convallis."</blockquote>
-                </li>
+                    </div>
 
-                <li>
-                    <img src="image/nhankhoa.png" alt="BS Nhan khoa">
-                    <p>ThS. BS. Nguyễn Thị Kim Dung</p>
-                    <cite>- Nhãn khoa</cite>
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget malesuada arcu. Aenean varius porta lobortis. Curabitur ultricies a arcu in convallis."</blockquote>
-                </li>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
 
-                <li>
-                    <img src="image/nhankhoa.png" alt="BS Nhan khoa">
-                    <p>ThS. BS. Nguyễn Thị Kim Dung</p>
-                    <cite>- Nhãn khoa</cite>
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget malesuada arcu. Aenean varius porta lobortis. Curabitur ultricies a arcu in convallis."</blockquote>
-                </li>
-                
-                <li>
-                    <img src="image/nhankhoa.png" alt="BS Nhan khoa">
-                    <p>ThS. BS. Nguyễn Thị Kim Dung</p>
-                    <cite>- Nhãn khoa</cite>
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget malesuada arcu. Aenean varius porta lobortis. Curabitur ultricies a arcu in convallis."</blockquote>
-                </li>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/114979/e338e98b-33e7-4731-8b99-a97445322d89" alt="">
+                        <div class="info">
+                            <p class="name">ThS. BS. Lê Hoàng Hạnh Nghi</p>
+                            <cite class="specialty">Dinh dưỡng</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Lê Hoàng Hạnh Nghi có kinh nghiệm trong việc tư vấn điều trị các bệnh lý liên quan đến
+                            dinh dưỡng.</p>
 
+                    </div>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
 
-            </ul>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/120898/7463db45-926d-40ec-b259-d01275b21451"
+                            alt="11">
+                        <div class="info">
+                            <p class="name">ThS. BS. CKI. Đỗ Đăng Trí</p>
+                            <cite class="specialty">Nhi khoa</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Đỗ Đăng Trí chuyên điều trị bệnh lý Nhi tổng quát, đặc biệt là Thận, Tiết niệu, Miễn
+                            dịch Nhi chuyên sâu</p>
+
+                    </div>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/20585/3222c5ee-6875-4375-a676-4feb8f2b39ea" alt="5">
+                        <div class="info">
+                            <p class="name">ThS. BS. Lê Kim Ngân</p>
+                            <cite class="specialty">Nội khoa</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Lê Kim Ngân từng tu nghiệp tại Bỉ với trên 11 năm kinh nghiệm và là Giảng viên tại Đại
+                            học
+                            Y khoa Phạm Ngọc Thạch...</p>
+                    </div>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/137952/9279b20a-e65c-46b3-b4b4-b80e02322fa0"
+                            alt="20">
+                        <div class="info">
+                            <p class="name">BS. CKI. Trần Thị Bích Ngọc</p>
+                            <cite class="specialty">Nội thần kinh - Nội tổng quát - Đa khoa</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Trần Thị Bích Ngọc có chuyên môn cao trong điều trị các bệnh lý về Nội thần kinh với
+                            hơn
+                            14 năm kinh nghiệm. Bác sĩ hiện công tác Bệnh viện Nhân dân 115.</p>
+
+                    </div>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/222884/5084d461-dd7d-4bc2-a694-72e9786fc2f6"
+                            alt="29">
+                        <div class="info">
+                            <p class="name">BS. Châu Duy Khánh</p>
+                            <cite class="specialty">Nhi khoa</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Châu Duy Khánh chuyên điều trị: bệnh lý Nhi Hô hấp; bệnh lý tiêu hóa; các bệnh lý khác
+                            ở
+                            trẻ em: Nhiễm siêu vi, sốt xuất huyết, tay chân miệng, thủy đậu...</p>
+
+                    </div>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/137415/9050a55b-1034-4b32-b933-f186fd23fbcc"
+                            alt="27">
+                        <div class="info">
+                            <p class="name">BS. Trần Gia Bảo</p>
+                            <cite class="specialty">Hô hấp - Nội tổng quát</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Trần Gia Bảo chuyên điều trị các bệnh lý cơ xương khớp, bệnh lý hô hấp.</p>
+
+                    </div>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/119910/56e597c0-1406-472e-b0f9-dee7bef33ab9"
+                            alt="13">
+                        <div class="info">
+                            <p class="name">BS. CKI. Lê Khưu Duy Anh</p>
+                            <cite class="specialty">Xạ trị ung thư - Ung bướu - Chăm sóc giảm nhẹ</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Lê Khưu Duy Anh hiện đang công tác tại Bệnh viện Ung Bướu TP.HCM. Bác sĩ chuyên tư vấn
+                            tầm
+                            soát, khám và chẩn đoán các bệnh lý Ung bướu.</p>
+
+                    </div>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="https://cdn.jiohealth.com/doctor/115993/75bcc9aa-84e0-4803-aa9d-73cdff7927fe"
+                            alt="20">
+                        <div class="info">
+                            <p class="name">BS. Võ Thùy Linh</p>
+                            <cite class="specialty">Chẩn đoán hình ảnh</cite>
+                        </div>
+                        <hr>
+                        <p>Bác sĩ Võ Thùy Linh đã có 4 năm kinh nghiệm trong lĩnh vực Chẩn đoán hình ảnh, đặc biệt trong
+                            lĩnh vực Siêu âm tim và Siêu âm Sản phụ khoa cơ bản.</p>
+
+                    </div>
+                    <div class="Chat"> <a href="">Kết nối</a> </div>
+                    
+                </div>
+            </div>
+        </section>
+        <button class="show_more_btn">XEM THÊM</button>
+       
+    </div>
+
+    <button id="openChatbox" class="Chat-popup"><i class="material-icons"> insert_comment </i></button>
+    <div id ="myChatbox"class="Chatbox">
+        <!-- <div class="badge">1</div> -->
+        <div class="chat-header">
+            <div class="active">
+                <i class="material-icons"> support_agent </i>
+                <h4> BS. Lê Hoàng Hạnh Nghi</h4>
+                <h6>Đang hoạt động</h3>
+            </div>
+            <button><i class="fas fa-compress-alt"></i></button>
         </div>
-    </section>
+        <hr>
+        <div class="chat-area">
+            <div class="income-chats">
+                <div class="income-msg">
+                    <img class="avatar"
+                        src="https://cdn.jiohealth.com/doctor/114979/e338e98b-33e7-4731-8b99-a97445322d89" alt="">
+                    <span class="msg">Xin chào, tôi có thể giúp gì cho bạn?</span>
+                </div>
+            </div>
+            <div class="outgoing-chats">
+                <div class="outgoing-msg">
+                    <span class="msg">Tại sao tui ế v</span>
+                    <img class="avatar" src="image/avatar.jpg" alt="">
+                </div>
+            </div>
+            <div class="income-chats">
+                <div class="income-msg">
+                    <img class="avatar"
+                        src="https://cdn.jiohealth.com/doctor/114979/e338e98b-33e7-4731-8b99-a97445322d89" alt="">
+                    <span class="msg">Xin chào, tôi có thể giúp gì cho bạn?</span>
+                </div>
+            </div>
+            <div class="outgoing-chats">
+                <div class="outgoing-msg">
+                    <span class="msg">Tại sao tui ế v</span>
+                    <img class="avatar" src="image/avatar.jpg" alt="">
+                </div>
+            </div>
+            <div class="income-chats">
+                <div class="income-msg">
+                    <img class="avatar"
+                        src="https://cdn.jiohealth.com/doctor/114979/e338e98b-33e7-4731-8b99-a97445322d89" alt="">
+                    <span class="msg">Xin chào, tôi có thể giúp gì cho bạn?</span>
+                </div>
+            </div>
+            <div class="outgoing-chats">
+                <div class="outgoing-msg">
+                    <span class="msg">Tại sao tui ế v</span>
+                    <img class="avatar" src="image/avatar.jpg" alt="">
+                </div>
+            </div>
+            <div class="income-chats">
+                <div class="income-msg">
+                    <img class="avatar"
+                        src="https://cdn.jiohealth.com/doctor/114979/e338e98b-33e7-4731-8b99-a97445322d89" alt="">
+                    <span class="msg">Xin chào, tôi có thể giúp gì cho bạn?</span>
+                </div>
+            </div>
+            <div class="outgoing-chats">
+                <div class="outgoing-msg">
+                    <span class="msg">Tại sao tui ế v</span>
+                    <img class="avatar" src="image/avatar.jpg" alt="">
+                </div>
+            </div>
+            <div class="income-chats">
+                <div class="income-msg">
+                    <img class="avatar"
+                        src="https://cdn.jiohealth.com/doctor/114979/e338e98b-33e7-4731-8b99-a97445322d89" alt="">
+                    <span class="msg">Xin chào, tôi có thể giúp gì cho bạn?</span>
+                </div>
+            </div>
+            <div class="outgoing-chats">
+                <div class="outgoing-msg">
+                    <span class="msg">Tại sao tui ế v</span>
+                    <img class="avatar" src="image/avatar.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="input-area">
+            <input type="text" placeholder="text here...">
+            <button class="icons"><i class="material-icons"> insert_emoticon </i></button>
+            <button class="submit"><i class="material-icons">send</i></button>
+            <button class="list"><i class="material-icons"> format_list_bulleted </i></button>
+            <button class="upload"><i class="material-icons"> attach_file </i></button>
+        </div>
+    </div>
+    <a class="gotopbtn" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <script>
+        document.getElementById("openChatbox").onclick = function() {myFunction()};
+        function myFunction() {
+        document.getElementById("myChatbox").classList.toggle("show");}
+    </script>
+    <footer>
+        <svg class="wavy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#21318d" fill-opacity="1" d="M0,192L60,213.3C120,235,240,277,360,293.3C480,309,600,299,720,256C840,213,960,139,1080,138.7C1200,139,1320,213,1380,250.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <div class="contact">
+           <ul class="cont">
+               <li> <span>Điện thoại</span> 09934923</li>
+               <li> <span>Hotline</span> 190063689</li>
+               <li> <span>Hỗ trợ</span> support@health.com</li>
+           </ul>
+       </div>
+    </footer>
 </body>
+
 </html>
