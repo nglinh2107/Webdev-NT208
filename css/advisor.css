@@ -45,6 +45,7 @@ body{
     font-family: 'Libre Caslon Text';
     font-weight: bold;
     color: white;
+    
 }
 .navbar nav ul{
     list-style-type: none;
@@ -94,9 +95,59 @@ li.current{
 }
 
 
+/* ----------------------------------------ILLUSTRATION--------------------  */
+.illustration{
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    background-image: url(https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.1.4/assets/images/doctor-profile/doctor-list-banner-dt.svg);
+    background-size: 100% 30vw;
+}
+.illustration img{
+    margin: 0;
+    padding: auto;
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+.illustration .sp{
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    top:17vw;
+}
+.illustration .mainbanner{
+    width: 50%;
+    float: right;
+    height: 100%;
+    margin-top: 6vw;
+    object-fit: fill;
+}
+.illustration div{
+    background-color: none;
+    position: absolute;
+    z-index: 0;
+    top:7vw;
+    width: 50vw;
+    font-size: 3vw;
+    text-align: justify;
+    font-family: 'Raleway';
+    color: #22b1b1;
+    left: 4vw;
+}
+.illustration .slogan{
+    position: absolute;
+    color: #3f51b5;
+    font-size: 2vw;
+    width: 60vw;
+    top: 9vw;
+    left:-2vw;
+    font-family: 'Fira sans';
+}
+
 /*--------------------MAIN---------------------*/
 .main {
-    padding-top: 7vw;
+    padding-top: 5vw;
     width: 100%;
   }
 section.find{
@@ -126,7 +177,7 @@ hr{
     position: absolute;
     padding: 0.5vw;
     width: 30%;
-    top: 16vw;
+    top: 45.5vw;
     left: 15vw;
     height: 2vw;
     border-radius: 3vw;
@@ -156,7 +207,7 @@ hr{
     position: absolute;
     padding: 0.5vw;
     width: 30%;
-    top: 16vw;
+    top: 45.5vw;
     right: 13vw;
     height: 2vw;
     border-radius: 3vw;
@@ -185,9 +236,9 @@ hr{
 }
 .col{
     flex:30%;
+    max-width: 30%;
     box-sizing:border-box;
     margin:2.0vw 1.5vw;
-    justify-content: center;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     border-radius: 2vw;
 }
@@ -206,7 +257,7 @@ hr{
     border-radius:50%;
     border: .25vw solid #1fc5c5;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    
+    object-fit: cover;
 }
 
 .info{
@@ -257,6 +308,7 @@ hr{
     font-style:normal;
     padding: 0.3vw 4vw 0.1vw 4vw;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    letter-spacing: .05vw;
 }
 .Chat a:hover {
     background: var(--primary-color);
@@ -309,7 +361,7 @@ hr{
     position: relative;
     display: block;
     margin: 0 auto;
-    bottom: 7vw;
+    bottom: 4vw;
     width:17vw;
     height: 4vw;
     font-size: 1.5vw;
@@ -325,6 +377,12 @@ hr{
     background: white;
     /* border:0.1vw solid #3f51b5; */
     color: #3f51b5;
+}
+.line{
+    z-index: -1;
+    position: relative;
+    bottom: 8vw;
+    width: 100%;
 }
 .wavy{
     z-index: -1;
